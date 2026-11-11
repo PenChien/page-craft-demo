@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>skill-html 範例</title>
+<style>
+:root{--bg:#f4f5f7;--card:#fff;--fg:#14161a;--fg2:#5b5f66;--line:#e3e5e8;--acc:#1b4f9c}
+@media (prefers-color-scheme:dark){:root{--bg:#121417;--card:#1b1e23;--fg:#eceef1;--fg2:#9aa0a8;--line:#2b2f36;--acc:#7aa7ec}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif}
+main{max-width:880px;margin:0 auto;padding:40px 16px 64px}
+h1{font-size:26px;margin:0 0 4px}
+.sub{color:var(--fg2);margin:0 0 28px}
+h2{font-size:15px;color:var(--fg2);font-weight:600;margin:28px 0 10px;letter-spacing:.02em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;color:inherit;text-decoration:none}
+a.card:hover{border-color:var(--acc)}
+a.card b{display:block;color:var(--acc);margin-bottom:2px}
+a.card span{color:var(--fg2);font-size:13.5px}
+footer{color:var(--fg2);font-size:13px;margin-top:36px}
+</style>
+</head>
+<body>
+<main>
+<h1>skill-html 範例</h1>
+<p class="sub">每頁都是單檔 HTML，點開即可瀏覽。</p>
+
+<h2>jira 使用說明（三種風格）</h2>
+<div class="grid">
+<a class="card" href="jira-radix.html"><b>Radix 極簡</b><span>內嵌 live-panel loop 流程圖</span></a>
+<a class="card" href="jira-ocean.html"><b>Ocean 深藍</b><span>inline SVG 泳道</span></a>
+<a class="card" href="jira-momo.html"><b>Momo 計畫版</b><span>CSS 流程框</span></a>
+<a class="card" href="source-jira-使用說明.html"><b>原始頁</b><span>三種風格的產生來源</span></a>
+</div>
+
+<h2>live-panel 動態圖</h2>
+<div class="grid">
+<a class="card" href="live-panel-demo.html"><b>live-panel 示範</b><span>所有視圖的總覽與做法</span></a>
+<a class="card" href="jira-loop.html"><b>loop</b><span>一張 Story 的生命週期</span></a>
+<a class="card" href="lp-ring.html"><b>ring</b><span>事故處理循環</span></a>
+<a class="card" href="lp-funnel.html"><b>funnel</b><span>工單變成紀錄的比例</span></a>
+<a class="card" href="lp-monitor.html"><b>終端機面板</b><span>Toolbridge 閘道即時面板</span></a>
+<a class="card" href="lp-wall.html"><b>16:9 監控牆</b><span>專案監控牆，F11 全螢幕</span></a>
+</div>
+
+<h2>其他</h2>
+<div class="grid">
+<a class="card" href="momo-demo.html"><b>Momo 元件示範</b><span>封面、卡片、進度條、三種架構圖</span></a>
+<a class="card" href="demo-arch.html"><b>drawio 線路架構</b><span>drawio 重繪成 inline SVG</span></a>
+<a class="card" href="demo-arch.drawio"><b>demo-arch.drawio</b><span>可用 diagrams.net 開啟編輯</span></a>
+</div>
+
+<footer>live-panel 動態圖來源：github.com/ythx-101/live-panel-skill（MIT）。</footer>
+</main>
+</body>
+</html>
